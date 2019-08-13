@@ -39,11 +39,29 @@ img{
 }
 
 /** Utilidades **/
-centrar-texto{
+.centrar-texto{
     text-align: center;
 }
 .no-margin{
     margin: 0;
+}
+
+
+/** Grid **/
+@media(min-width: 768px){
+    .grid{
+        display: flex;
+        justify-content: space-between;
+    }    
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 1rem);
+    }    
+    .columnas-6{
+        flex: 0 0 calc(50% - 1rem);
+    }    
+    .columnas-8{
+        flex: 0 0 calc(66.6% - 1rem);
+    }
 }
 
 /** Botones **/
@@ -179,6 +197,7 @@ centrar-texto{
 .curso{
     padding-bottom: 3rem;
     border-bottom: 1px solid #e1e1e1;
+    padding-top: 3rem;
 }
 .curso:last-of-type{
     border-bottom: none;
@@ -188,7 +207,7 @@ centrar-texto{
     font-weight: 700;
     font-size: 2rem;
 }
-.curso p span{
+.curso p span, .curso p.descripcion{
     font-weight:400;
 }
 /** Footer **/
