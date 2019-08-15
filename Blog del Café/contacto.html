@@ -34,26 +34,31 @@
     </header>
     
     <main class="contenedor">
-        <h2 class="centrar-texto">Sobre Nosotros</h2>
-        <div class="grid">
-            <div class="columnas-6">
-                <img src="img/nosotros.jpg" alt="Imagen Nosotros">
+        <h2 class="centrar-texto">
+            Contacto
+        </h2>
+        <div class="grid centrar-columnas">
+            <div class="columnas-12">
+                <img src="img/contacto.jpg" alt="Imagen contacto">
             </div>
-            <div class="columnas-6">
-                <p>
-                    Facilisi class sapien ultrices eros inceptos facilisis congue litora, quisque est mattis porta magnis luctus at dictumst, 
-                    penatibus tristique proin etiam vel scelerisque rutrum. Class orci auctor donec ac suspendisse ultricies euismod rhoncus 
-                    aenean, elementum id purus ad quisque nullam diam non nisi accumsan, sociosqu montes enim laoreet egestas luctus mauris 
-                    mollis. Ullamcorper suspendisse justo ridiculus quisque odio purus penatibus malesuada felis eget, congue luctus pulvinar 
-                    nam quam urna varius aptent torquent, dictumst fames natoque sodales curae molestie blandit potenti nulla.
-                </p>
-                <p>
-                    Facilisi class sapien ultrices eros inceptos facilisis congue litora, quisque est mattis porta magnis luctus at dictumst, 
-                    penatibus tristique proin etiam vel scelerisque rutrum. Class orci auctor donec ac suspendisse ultricies euismod rhoncus 
-                    aenean, elementum id purus ad quisque nullam diam non nisi accumsan, sociosqu montes enim laoreet egestas luctus mauris 
-                    mollis. Ullamcorper suspendisse justo ridiculus quisque odio purus penatibus malesuada felis eget, congue luctus pulvinar 
-                    nam quam urna varius aptent torquent, dictumst fames natoque sodales curae molestie blandit potenti nulla.
-                </p>
+            <div class="columnas-10 formulario-contacto">
+                <form action="#">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" placeholder="Tu Email">
+                    </div>
+                    <div class="campo mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje"></textarea>
+                    </div>
+                    <div class="campo enviar">
+                        <input type="submit" value="Enviar" class="btn btn-primario">
+                    </div>
+                </form>
             </div>
         </div>
     </main>
